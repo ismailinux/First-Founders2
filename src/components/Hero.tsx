@@ -36,8 +36,8 @@ const Hero = () => {
             <div className="brutalist-border overflow-hidden">
               <AspectRatio ratio={16/9}>
                 <img 
-                  src="/header-image.jpg" 
-                  alt="African entrepreneurs working on startup ideas" 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                  alt="Team of professionals working together on startup ideas" 
                   className="w-full h-full object-cover"
                 />
               </AspectRatio>
