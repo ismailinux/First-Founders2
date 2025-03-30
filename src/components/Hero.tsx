@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="md:w-1/2 mt-8 md:mt-0">
+          <div className="md:w-1/2 mt-0 md:mt-0 self-start">
             <div className="brutalist-border overflow-hidden">
               <AspectRatio ratio={16/9}>
                 <img 
