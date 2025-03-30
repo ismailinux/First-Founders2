@@ -1,7 +1,9 @@
 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const teamMembers = [
   {
@@ -33,10 +35,29 @@ const teamMembers = [
     name: "Fatima Diallo",
     role: "Startup Advisor",
     bio: "Mentored over 100 startups through accelerator programs."
+  },
+  {
+    name: "Kwame Addo",
+    role: "Financial Strategist",
+    bio: "Specialized in helping startups achieve financial sustainability and growth."
+  },
+  {
+    name: "Nia Abebe",
+    role: "Marketing Director",
+    bio: "Expert in brand building for emerging market startups and scale-ups."
+  },
+  {
+    name: "Tunde Osei",
+    role: "Innovation Lead",
+    bio: "Pioneered innovation frameworks for tech startups across Sub-Saharan Africa."
   }
 ];
 
 const About = () => {
+  const [showAllTeam, setShowAllTeam] = useState(false);
+  
+  const displayedTeamMembers = showAllTeam ? teamMembers : teamMembers.slice(0, 6);
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -85,7 +106,7 @@ const About = () => {
           <div className="brutalist-container px-4">
             <h2 className="text-5xl mb-12 text-center">OUR TEAM</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {teamMembers.map((member, index) => (
+              {displayedTeamMembers.map((member, index) => (
                 <div key={index} className="brutalist-border bg-brutalist-white p-8">
                   <div className="w-24 h-24 rounded-full brutalist-border bg-brutalist-black mb-4 mx-auto"></div>
                   <h3 className="text-2xl font-bebas mb-1 text-center">{member.name}</h3>
@@ -94,6 +115,17 @@ const About = () => {
                 </div>
               ))}
             </div>
+            
+            {!showAllTeam && teamMembers.length > 6 && (
+              <div className="mt-8 text-center">
+                <Button 
+                  onClick={() => setShowAllTeam(true)}
+                  className="brutalist-border bg-brutalist-black text-brutalist-white font-bebas uppercase tracking-wide px-8 py-3 text-xl hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all"
+                >
+                  SEE ALL TEAM
+                </Button>
+              </div>
+            )}
           </div>
         </section>
         
