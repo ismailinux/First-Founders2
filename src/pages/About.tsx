@@ -18,16 +18,16 @@ import vmAvatar from '../assets/vm.svg';
 
 // Updated team members with imported assets
 const teamMembers = [
-  { name: "Ade Johnson", role: "Founder & CEO", bio: "20+ years experience in tech and venture capital across African markets.", avatar: dlmAvatar },
-  { name: "Sarah Nkosi", role: "Chief Operating Officer", bio: "Former startup founder with exits in fintech and healthtech sectors.", avatar: cooAvatar },
-  { name: "Sarah Nkosi", role: "Chief Operating Officer", bio: "Former startup founder with exits in fintech and healthtech sectors.", avatar: ctoAvatar },
-  { name: "Kofi Mensah", role: "Investment Director", bio: "15 years in investment banking focused on emerging markets.", avatar: hfAvatar },
-  { name: "Amina Said", role: "Head of Partnerships", bio: "Built strategic partnerships across 12 African countries.", avatar: hpdAvatar },
-  { name: "Victor Okonkwo", role: "Technical Director", bio: "Led engineering teams at major tech companies across Africa.", avatar: otAvatar },
-  { name: "Fatima Diallo", role: "Startup Advisor", bio: "Mentored over 100 startups through accelerator programs.", avatar: aaAvatar },
-  { name: "Kwame Addo", role: "Financial Strategist", bio: "Specialized in helping startups achieve financial sustainability and growth.", avatar: atAvatar },
-  { name: "Nia Abebe", role: "Marketing Director", bio: "Expert in brand building for emerging market startups and scale-ups.", avatar: deAvatar },
-  { name: "Tunde Osei", role: "Innovation Lead", bio: "Pioneered innovation frameworks for tech startups across Sub-Saharan Africa.", avatar: vmAvatar },
+  { name: "David Lanre Messan", role: "Founder & CEO", bio: "20+ years experience in tech and venture capital across African markets.", avatar: dlmAvatar },
+  { name: "Kemeshi Samuel", role: "Chief Operating Officer", bio: "Former startup founder with exits in fintech and healthtech sectors.", avatar: cooAvatar },
+  { name: "Wilson Oguchi", role: "Chief Technology Officer", bio: "Former startup founder with exits in fintech and healthtech sectors.", avatar: ctoAvatar },
+  { name: "Deborah Abayomi", role: "Investment Director", bio: "15 years in investment banking focused on emerging markets.", avatar: hfAvatar },
+  { name: "Sunday Omohwovo", role: "Head of Partnerships", bio: "Built strategic partnerships across 12 African countries.", avatar: hpdAvatar },
+  { name: "Oluwatobi Oyeniji", role: "Technical Director", bio: "Led engineering teams at major tech companies across Africa.", avatar: otAvatar },
+  { name: "Akintunde Akinsanmi", role: "Startup Advisor", bio: "Mentored over 100 startups through accelerator programs.", avatar: aaAvatar },
+  { name: "Afolayan Tomi", role: "Financial Strategist", bio: "Specialized in helping startups achieve financial sustainability and growth.", avatar: atAvatar },
+  { name: "Daniel Ebiondo", role: "Marketing Director", bio: "Expert in brand building for emerging market startups and scale-ups.", avatar: deAvatar },
+  { name: "Victor Mosope", role: "Innovation Lead", bio: "Pioneered innovation frameworks for tech startups across Sub-Saharan Africa.", avatar: vmAvatar },
 ];
 
 const About = () => {
