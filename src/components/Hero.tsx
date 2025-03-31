@@ -1,6 +1,6 @@
-
 import { Link } from 'react-router-dom';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import heroImage from '../assets/hero-image.svg'; // Import the SVG
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            We are a venture studio providing the financial backing and operational support that transform ideas into thriving businesses from 0-1 repeatedly.
+              We are a venture studio providing the financial backing and operational support that transform ideas into thriving businesses from 0-1 repeatedly.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="brutalist-border overflow-hidden">
               <AspectRatio ratio={16/9}>
                 <img 
-                  src="./assets/hero-image.svg" 
+                  src={heroImage} 
                   alt="The FirstFounders Team" 
                   className="w-full h-full object-cover"
                 />

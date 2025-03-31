@@ -1,71 +1,33 @@
-
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
+// Import each avatar
+import dlmAvatar from '../assets/DLM.svg';
+import cooAvatar from '../assets/coo.svg';
+import ctoAvatar from '../assets/cto.svg';
+import hfAvatar from '../assets/hf.svg';
+import hpdAvatar from '../assets/hpd.svg';
+import otAvatar from '../assets/ot.svg';
+import aaAvatar from '../assets/aa.svg';
+import atAvatar from '../assets/at.svg';
+import deAvatar from '../assets/de.svg';
+import vmAvatar from '../assets/vm.svg';
+
+// Updated team members with imported assets
 const teamMembers = [
-  {
-    name: "Ade Johnson",
-    role: "Founder & CEO",
-    bio: "20+ years experience in tech and venture capital across African markets.",
-    avatar: "./assets/DLM.svg",
-  },
-  {
-    name: "Sarah Nkosi",
-    role: "Chief Operating Officer",
-    bio: "Former startup founder with exits in fintech and healthtech sectors.",
-    avatar: "./assets/coo.svg",
-  },
-  {
-    name: "Sarah Nkosi",
-    role: "Chief Operating Officer",
-    bio: "Former startup founder with exits in fintech and healthtech sectors.",
-    avatar: "./assets/cto.svg",
-  },
-  {
-    name: "Kofi Mensah",
-    role: "Investment Director",
-    bio: "15 years in investment banking focused on emerging markets.",
-    avatar: "./assets/hf.svg",
-  },
-  {
-    name: "Amina Said",
-    role: "Head of Partnerships",
-    bio: "Built strategic partnerships across 12 African countries.",
-    avatar: "./assets/hpd.svg",
-  },
-  {
-    name: "Victor Okonkwo",
-    role: "Technical Director",
-    bio: "Led engineering teams at major tech companies across Africa.",
-    avatar: "./assets/ot.svg",
-  },
-  {
-    name: "Fatima Diallo",
-    role: "Startup Advisor",
-    bio: "Mentored over 100 startups through accelerator programs.",
-    avatar: "./assets/aa.svg",
-  },
-  {
-    name: "Kwame Addo",
-    role: "Financial Strategist",
-    bio: "Specialized in helping startups achieve financial sustainability and growth.",
-    avatar: "./assets/at.svg",
-  },
-  {
-    name: "Nia Abebe",
-    role: "Marketing Director",
-    bio: "Expert in brand building for emerging market startups and scale-ups.",
-    avatar: "./assets/de.svg",
-  },
-  {
-    name: "Tunde Osei",
-    role: "Innovation Lead",
-    bio: "Pioneered innovation frameworks for tech startups across Sub-Saharan Africa.",
-    avatar: "./assets/vm.svg",
-  }
+  { name: "Ade Johnson", role: "Founder & CEO", bio: "20+ years experience in tech and venture capital across African markets.", avatar: dlmAvatar },
+  { name: "Sarah Nkosi", role: "Chief Operating Officer", bio: "Former startup founder with exits in fintech and healthtech sectors.", avatar: cooAvatar },
+  { name: "Sarah Nkosi", role: "Chief Operating Officer", bio: "Former startup founder with exits in fintech and healthtech sectors.", avatar: ctoAvatar },
+  { name: "Kofi Mensah", role: "Investment Director", bio: "15 years in investment banking focused on emerging markets.", avatar: hfAvatar },
+  { name: "Amina Said", role: "Head of Partnerships", bio: "Built strategic partnerships across 12 African countries.", avatar: hpdAvatar },
+  { name: "Victor Okonkwo", role: "Technical Director", bio: "Led engineering teams at major tech companies across Africa.", avatar: otAvatar },
+  { name: "Fatima Diallo", role: "Startup Advisor", bio: "Mentored over 100 startups through accelerator programs.", avatar: aaAvatar },
+  { name: "Kwame Addo", role: "Financial Strategist", bio: "Specialized in helping startups achieve financial sustainability and growth.", avatar: atAvatar },
+  { name: "Nia Abebe", role: "Marketing Director", bio: "Expert in brand building for emerging market startups and scale-ups.", avatar: deAvatar },
+  { name: "Tunde Osei", role: "Innovation Lead", bio: "Pioneered innovation frameworks for tech startups across Sub-Saharan Africa.", avatar: vmAvatar },
 ];
 
 const About = () => {
@@ -123,9 +85,7 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {displayedTeamMembers.map((member, index) => (
                 <div key={index} className="brutalist-border bg-brutalist-white p-8">
-                  
-                  <img src={member.avatar} alt={member.name} className='w-24.2 h-24.2 mb-4 mx-auto  brutalist-border'/>
-                 
+                  <img src={member.avatar} alt={member.name} className='w-24.2 h-24.2 mb-4 mx-auto brutalist-border'/>
                   <h3 className="text-2xl font-bebas mb-1 text-center">{member.name}</h3>
                   <p className="text-center mb-4 text-lg">{member.role}</p>
                   <p className="text-center">{member.bio}</p>

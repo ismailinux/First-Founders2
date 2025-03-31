@@ -1,37 +1,21 @@
-
 import { Link } from 'react-router-dom';
 
+// Import each logo
+import pocketLawyersLogo from '../assets/logos/pocket-lawyers.svg';
+import paysonetLogo from '../assets/logos/paysonet.svg';
+import escapeLogo from '../assets/logos/escape.svg';
+import payaftaLogo from '../assets/logos/payafta.svg';
+import wiggoLogo from '../assets/logos/wiggo.svg';
+import tappitLogo from '../assets/logos/tappit.svg';
+
+// Updated portfolio data with imported assets
 const portfolioData = [
-  {
-    name: "PocketLawyers",
-    industry: "LegalTech",
-    logo: "assets/logos/pocket-lawyers.svg"
-  },
-  {
-    name: "PaySonet",
-    industry: "Fintech",
-    logo: "assets/logos/paysonet.svg"
-  },
-  {
-    name: "Escape",
-    industry: "Fintech",
-    logo: "assets/logos/escape.svg"
-  },
-  {
-    name: "PayAfta",
-    industry: "Fintech",
-    logo: "assets/logos/payafta.svg"
-  },
-  {
-    name: "Wiggo",
-    industry: "Travel",
-    logo: "assets/logos/wiggo.svg"
-  },
-  {
-    name: "Tappit",
-    industry: "Fintech",
-    logo: "assets/logos/tappit.svg"
-  }
+  { name: "PocketLawyers", industry: "LegalTech", logo: pocketLawyersLogo },
+  { name: "PaySonet", industry: "Fintech", logo: paysonetLogo },
+  { name: "Escape", industry: "Fintech", logo: escapeLogo },
+  { name: "PayAfta", industry: "Fintech", logo: payaftaLogo },
+  { name: "Wiggo", industry: "Travel", logo: wiggoLogo },
+  { name: "Tappit", industry: "Fintech", logo: tappitLogo },
 ];
 
 const Portfolio = () => {
@@ -50,10 +34,10 @@ const Portfolio = () => {
             <div key={index} className="brutalist-border bg-brutalist-white p-8 text-center hover:bg-brutalist-orange transition-colors group">
               <div className="w-40 h-20 brutalist-border flex items-center justify-center mx-auto mb-4 bg-brutalist-black text-brutalist-white text-3xl font-bebas group-hover:bg-brutalist-white group-hover:text-brutalist-black transition-colors">
                 <img
-                    src={company.logo}
-                    alt={company.name}
-                    className="w-full h-full object-contain p-1"
-                  />
+                  src={company.logo}
+                  alt={company.name}
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <h3 className="text-2xl font-bebas mb-2">{company.name}</h3>
               <p className="mb-4">{company.industry}</p>
