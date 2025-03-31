@@ -85,7 +85,12 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {displayedTeamMembers.map((member, index) => (
                 <div key={index} className="brutalist-border bg-brutalist-white p-8">
-                  <img src={member.avatar} alt={member.name} className='w-24.2 h-24.2 mb-4 mx-auto brutalist-border'/>
+                  <img 
+                    src={member.avatar} 
+                    alt={member.name} 
+                    className="w-24.2 h-24.2 mb-4 mx-auto brutalist-border"
+                    loading="lazy" // Add lazy loading here
+                  />
                   <h3 className="text-2xl font-bebas mb-1 text-center">{member.name}</h3>
                   <p className="text-center mb-4 text-lg">{member.role}</p>
                   <p className="text-center">{member.bio}</p>
