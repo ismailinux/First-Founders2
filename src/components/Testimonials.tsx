@@ -1,19 +1,19 @@
 
 const testimonialsData = [
   {
-    quote: "FirstFounders was instrumental in helping us go from idea to market in just 6 months. Their mentorship and funding connections were invaluable.",
-    author: "Chioma A.",
-    role: "Founder, AgriTech Co"
+    quote: "PocketLawyers has been fabulous! The team is young, energetic and brilliant! They pointed my team and I to grey areas we didn't even think about and proferred solutions them! it's been an enlightening journey and they made it easy! I surely recommend them for your MVP build.",
+    author: "Ngozi Nwabueze",
+    role: "PocketLawyers"
   },
   {
-    quote: "The studio approach gave us access to resources we couldn't have afforded on our own. FirstFounders' team feels like an extension of our own.",
-    author: "Kwame O.",
-    role: "CEO, FinanceAfrica"
+    quote: "Working with FirstFounders on my project, Syarpa has experienced the burgeoning value that FirstFounders bring to the table especially with fundraising and startup advisory. Our relationship is consistent and continous. Thank you for your service. I highly recommend them!",
+    author: "Adedapo Sodipo",
+    role: "Founder, Syarpa"
   },
   {
-    quote: "Beyond the funding, the network of founders and mentors has been the most valuable asset in scaling our startup across multiple African markets.",
-    author: "Sarah N.",
-    role: "Founder, EduTech Pro"
+    quote: "Partnering with an organization that shares our passion for supporting the growth of startups is a wholesome one, and that is how we describe our partnership with FirstFounders. FirstFounders commitment to providing an enabling environment for early stage startups is highly commendable.",
+    author: "Hakeem Onsanya",
+    role: "Head, Startups, Lagos Innovates"
   }
 ];
 

@@ -13,7 +13,7 @@ const CallToAction = () => {
           <Link to="/contact" className="brutalist-btn inline-block">
             APPLY NOW
           </Link>
-          <Link to="/services" className="brutalist-border bg-brutalist-white text-brutalist-black font-bebas uppercase tracking-wide px-8 py-3 text-xl inline-block hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] transition-all">
+          <Link to="/services" onClick={() => window.scrollTo(0, 0)} className="brutalist-border bg-brutalist-white text-brutalist-black font-bebas uppercase tracking-wide px-8 py-3 text-xl inline-block hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] transition-all">
             LEARN MORE
           </Link>
         </div>

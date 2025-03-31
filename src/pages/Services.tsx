@@ -187,7 +187,7 @@ const Services = () => {
                 <div className="text-xl space-y-4">
                   <p>
                     <span className="font-bebas text-2xl block mb-2">FOCUS SECTORS:</span>
-                    FinTech, AgriTech, HealthTech, EdTech, CleanTech, LogisticsTech, and other sectors addressing pressing African challenges.
+                    FinTech, BioTech, HealthTech, Artificial Intelligence/IoT, and other sectors addressing pressing African challenges.
                   </p>
                   <p>
                     <span className="font-bebas text-2xl block mb-2">STAGE:</span>
@@ -195,7 +195,7 @@ const Services = () => {
                   </p>
                   <p>
                     <span className="font-bebas text-2xl block mb-2">GEOGRAPHY:</span>
-                    Primary focus on startups targeting West, East, and Southern African markets.
+                    Primary focus on startups targeting West, East, <span className="z-10 position relative">and</span> Southern African markets.
                   </p>
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brutalist-orange brutalist-border"></div>

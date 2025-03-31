@@ -7,6 +7,8 @@ import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import EcosystemAchievements from "@/components/EcosystemAchievements";
+import Awards from "@/components/Awards";
 
 const Index = () => {
   return (
@@ -18,6 +20,8 @@ const Index = () => {
         <Services />
         <Portfolio />
         <Testimonials />
+        <EcosystemAchievements />
+        <Awards />
         <CallToAction />
       </main>
       <Footer />

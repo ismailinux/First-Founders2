@@ -5,68 +5,74 @@ import CallToAction from "@/components/CallToAction";
 
 const portfolioCompanies = [
   {
-    name: "AgriTech Co",
-    description: "Digital marketplace connecting smallholder farmers to buyers, with integrated logistics and payment solutions.",
-    category: "Agriculture",
+    name: "PocketLawyers",
+    description: "PocketLawyers is Africa’s first fully integrative legal tech startup that offers access to affordable premium legal services and solutions to SMEs and Startups.",
+    category: "LegalTech",
     year: 2019,
-    logo: "AG"
+    initial: "PL",
+    logo: "./assets/logos/pocket-lawyers.svg",
   },
   {
-    name: "FinanceAfrica",
-    description: "Mobile banking platform providing accessible financial services to unbanked populations across rural Africa.",
+    name: "Paysonet",
+    description: "Fintech company dedicated to making digital payments easy and accessible, by providing tailored digital financial solutions to empower market women and business owners, helping them to conduct business and process payments without any hassle.",
     category: "Fintech",
     year: 2020,
-    logo: "FA"
+    initial: "  PS",
+    logo: "./assets/logos/paysonet.svg",
   },
   {
-    name: "EduTech Pro",
-    description: "Digital learning platform offering localized educational content and skills development for African students.",
-    category: "Education",
-    year: 2018,
-    logo: "EP"
-  },
-  {
-    name: "HealthBot",
-    description: "AI-powered health diagnostics and telemedicine service optimized for low-bandwidth environments.",
-    category: "Healthcare",
-    year: 2021,
-    logo: "HB"
-  },
-  {
-    name: "LogisticsPro",
-    description: "Last-mile delivery and supply chain optimization for challenging infrastructure environments.",
-    category: "Supply Chain",
-    year: 2019,
-    logo: "LP"
-  },
-  {
-    name: "SolarPower",
-    description: "Affordable pay-as-you-go solar energy solutions for homes and small businesses in off-grid areas.",
-    category: "Clean Energy",
-    year: 2020,
-    logo: "SP"
-  },
-  {
-    name: "DataInsight",
-    description: "Analytics platform helping businesses make data-driven decisions with limited infrastructure.",
-    category: "Data & Analytics",
-    year: 2021,
-    logo: "DI"
-  },
-  {
-    name: "SecurePay",
-    description: "Secure payment processing system designed specifically for African markets and currencies.",
+    name: "Escape",
+    description: "A digital wallet payment solution, simplifying payments to improve lives.",
     category: "Fintech",
     year: 2018,
-    logo: "SP"
+    initial: "ES",
+    logo: "./assets/logos/escape.svg",
   },
   {
-    name: "WorkConnect",
-    description: "Digital platform connecting skilled workers with employment opportunities across the continent.",
-    category: "HR Tech",
-    year: 2022,
-    logo: "WC"
-  }
+    name: "PayAfta",
+    description: "We offer you the safest way to pay for your online purchases. With Payafta, your money is held securely until you receive your goods or services as promised. Trust is at the core of what we do, and your peace of mind is our priority.",
+    category: "Fintech",
+    year: 2021,
+    initial: "PA",
+    logo: "./assets/logos/payafta.svg",
+  },
+  {
+    name: "Wiggo",
+    description: "Wiggo is a travel financing platform that makes it easier for travellers to plan, save and pay for their travels.",
+    category: "Travel",
+    year: 2019,
+    initial: "WG",
+    logo: "./assets/logos/wiggo.svg",
+  },
+  {
+    name: "Tappit",
+    description: "Tappit is a revolutionary fintech app that harnesses the power of Near Field Communication (NFC) technology, allowing users to make seamless and secure payments using their mobile devices.",
+    category: "Fintech",
+    year: 2020,
+    initial: "TP",
+    logo: "./assets/logos/tappit.svg",
+  },
+  // {
+  //   name: "DataInsight",
+  //   description: "Analytics platform helping businesses make data-driven decisions with limited infrastructure.",
+  //   category: "Data & Analytics",
+  //   year: 2021,
+  //   initial: "DI"
+  // },
+  // {
+  //   name: "SecurePay",
+  //   description: "Secure payment processing system designed specifically for African markets and currencies.",
+  //   category: "Fintech",
+  //   year: 2018,
+  //   initial: "SP"
+  // },
+  // {
+  //   name: "WorkConnect",
+  //   description: "Digital platform connecting skilled workers with employment opportunities across the continent.",
+  //   category: "HR Tech",
+  //   year: 2022,
+  //   initial: "WC"
+  // }
 ];
 
 const Portfolio = () => {
@@ -92,15 +98,16 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {portfolioCompanies.map((company, index) => (
                 <div key={index} className="brutalist-border group relative overflow-hidden">
-                  {/* Company Logo/Initial */}
+                  {/* Company initial/Initial */}
                   <div className="aspect-square flex items-center justify-center bg-brutalist-black">
                     <div className="text-brutalist-white text-6xl font-bebas">
-                      {company.logo}
+                      {company.initial}
                     </div>
                   </div>
                   
                   {/* Hover Content */}
                   <div className="absolute inset-0 bg-brutalist-orange p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src={company.logo} alt={company.name} className="w-fit h-14 mb-1"/>
                     <h3 className="text-2xl font-bebas mb-2">{company.name}</h3>
                     <div className="mb-2 font-medium">{company.category} | Est. {company.year}</div>
                     <p className="mb-4">{company.description}</p>

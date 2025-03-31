@@ -19,7 +19,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-              We partner with early-stage founders to build, scale, and fund startups that solve Africa's most pressing challenges.
+            We are a venture studio providing the financial backing and operational support that transform ideas into thriving businesses from 0-1 repeatedly.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -36,8 +36,8 @@ const Hero = () => {
             <div className="brutalist-border overflow-hidden">
               <AspectRatio ratio={16/9}>
                 <img 
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Team of professionals working together on startup ideas" 
+                  src="./assets/hero-image.svg" 
+                  alt="The FirstFounders Team" 
                   className="w-full h-full object-cover"
                 />
               </AspectRatio>

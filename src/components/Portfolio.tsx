@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 
 const portfolioData = [
   {
-    name: "AgriTech Co",
-    industry: "Agriculture",
-    logo: "AG"
+    name: "PocketLawyers",
+    industry: "LegalTech",
+    logo: "assets/logos/pocket-lawyers.svg"
   },
   {
-    name: "FinanceAfrica",
+    name: "PaySonet",
     industry: "Fintech",
-    logo: "FA"
+    logo: "assets/logos/paysonet.svg"
   },
   {
-    name: "EduTech Pro",
-    industry: "Education",
-    logo: "EP"
+    name: "Escape",
+    industry: "Fintech",
+    logo: "assets/logos/escape.svg"
   },
   {
-    name: "HealthBot",
-    industry: "Healthcare",
-    logo: "HB"
+    name: "PayAfta",
+    industry: "Fintech",
+    logo: "assets/logos/payafta.svg"
   },
   {
-    name: "LogisticsPro",
-    industry: "Supply Chain",
-    logo: "LP"
+    name: "Wiggo",
+    industry: "Travel",
+    logo: "assets/logos/wiggo.svg"
   },
   {
-    name: "SolarPower",
-    industry: "Clean Energy",
-    logo: "SP"
+    name: "Tappit",
+    industry: "Fintech",
+    logo: "assets/logos/tappit.svg"
   }
 ];
 
@@ -48,8 +48,12 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolioData.map((company, index) => (
             <div key={index} className="brutalist-border bg-brutalist-white p-8 text-center hover:bg-brutalist-orange transition-colors group">
-              <div className="w-20 h-20 brutalist-border flex items-center justify-center mx-auto mb-4 bg-brutalist-black text-brutalist-white text-3xl font-bebas group-hover:bg-brutalist-white group-hover:text-brutalist-black transition-colors">
-                {company.logo}
+              <div className="w-40 h-20 brutalist-border flex items-center justify-center mx-auto mb-4 bg-brutalist-black text-brutalist-white text-3xl font-bebas group-hover:bg-brutalist-white group-hover:text-brutalist-black transition-colors">
+                <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="w-full h-full object-contain p-1"
+                  />
               </div>
               <h3 className="text-2xl font-bebas mb-2">{company.name}</h3>
               <p className="mb-4">{company.industry}</p>

@@ -1,9 +1,11 @@
 
 const statsData = [
-  { number: "1,000+", label: "Founders Supported" },
-  { number: "$3M+", label: "Raised" },
-  { number: "50+", label: "Portfolio Companies" },
-  { number: "12", label: "African Countries" }
+  { number: "10", label: "Co-Founded Startups" },
+  { number: "$1M+", label: "Bootstrapped investment since 2020" },
+  { number: "25", label: "In-house venture builders and specialists" },
+  { number: "3+", label: "Sectors" },
+  { number: "1K+", label: "Community Members" },
+  { number: "20+", label: "Products & ventures built globally as a fee-based consultant" },
 ];
 
 const Stats = () => {
