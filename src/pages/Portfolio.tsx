@@ -94,32 +94,34 @@ const Portfolio = () => {
         
         {/* Portfolio Grid */}
         <section className="brutalist-section bg-brutalist-white">
-          <div className="brutalist-container px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {portfolioCompanies.map((company, index) => (
-                <div key={index} className="brutalist-border group relative overflow-hidden">
-                  {/* Company initial/Initial */}
-                  <div className="aspect-square flex items-center justify-center bg-brutalist-black">
-                    <div className="text-brutalist-white text-6xl font-bebas">
-                      {company.initial}
-                    </div>
-                  </div>
-                  
-                  {/* Hover Content */}
-                  <div className="absolute inset-0 bg-brutalist-orange p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <img src={company.logo} alt={company.name} className="w-fit h-14 mb-1"/>
-                    <h3 className="text-2xl font-bebas mb-2">{company.name}</h3>
-                    <div className="mb-2 font-medium">{company.category} | Est. {company.year}</div>
-                    <p className="mb-4">{company.description}</p>
-                    <button className="brutalist-border bg-brutalist-black text-brutalist-white font-bebas uppercase px-4 py-2 self-start hover:bg-brutalist-white hover:text-brutalist-black transition-colors">
-                      CASE STUDY
-                    </button>
-                  </div>
-                </div>
-              ))}
+  <div className="brutalist-container px-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {portfolioCompanies.map((company, index) => (
+        <div key={index} className="brutalist-border group relative overflow-hidden">
+          {/* Company initial/Initial */}
+          <div className="aspect-square flex items-center justify-center bg-brutalist-black">
+            <div className="text-brutalist-white text-6xl font-bebas">
+              {company.initial}
             </div>
           </div>
-        </section>
+          
+          {/* Hover Content */}
+          <div className="absolute inset-0 bg-brutalist-orange p-6 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <img src={company.logo} alt={company.name} className="w-fit h-14 mb-1"/>
+            <h3 className="text-2xl font-bebas mb-2">{company.name}</h3>
+            <div className="mb-2 font-medium">{company.category} | Est. {company.year}</div>
+            <div className="max-h-24 overflow-y-auto mb-4">
+              <p>{company.description}</p>
+            </div>
+            <button className="brutalist-border bg-brutalist-black text-brutalist-white font-bebas uppercase px-4 py-2 self-start hover:bg-brutalist-white hover:text-brutalist-black transition-colors">
+              CASE STUDY
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
         
         {/* Stats Section */}
         <section className="brutalist-section bg-brutalist-lightgray">
